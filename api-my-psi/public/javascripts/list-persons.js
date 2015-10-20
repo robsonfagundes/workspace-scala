@@ -6,10 +6,13 @@ $(function(){
         }else{
             var list_vip = '<ul>';
             for (var i in data) {
-               list_vip += '<li>' + data[i].name + '</li>';
+               list_vip += '<li><strong>' + data[i].name + '</strong></li>';
+               list_vip += 'Street 89, Downtown Cascacity </br>';
+               list_vip += '<a href="">Edit</a>' + ' - ';
+               list_vip += '<a href="">Remove</a>';
             }
             list_vip += '</ul></br>';
-            document.getElementById("list-persons").innerHTML = list_vip;
+            $("#list-persons").html(list_vip);
         }
     })
 })
