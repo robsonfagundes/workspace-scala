@@ -1,0 +1,31 @@
+object var_val {
+
+  println("Declaring var ou val variables")       //> Declaring var ou val variables
+
+  /**
+   * In Java we have:
+   * String Text = "My text";
+   */
+  val text: String = "my text"                    //> text  : String = my text
+
+  /**
+   * the type is optinal, but look term 'SSN'
+   */
+  val text2 = "my text 2"                         //> text2  : String = my text 2
+
+  /**
+   * primitive types, the compiler created
+   * an immutable INT (Integer)
+   */
+  3                                               //> res0: Int(3) = 3
+
+  /**
+   * Now, enter following line in Worksheet
+   */
+  3 + 2                                           //> res1: Int(5) = 5
+  (3). +(2)                                       //> res2: Int(5) = 5
+  val three = 3                                   //> three  : Int = 3
+  val six = 6.0                                   //> six  : Double = 6.0
+  three + six                                     //> res3: Double = 9.0
+  3 + 2.5 / 3.9000                                //> res4: Double = 3.641025641025641
+}

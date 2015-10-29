@@ -1,0 +1,43 @@
+package br.com.consulfarmasaude.sync.wrapper;
+
+import br.com.consulfarmasaude.model.FotoPessoa;
+
+/**
+ * 
+ * @author R-Sys Softwares - robsonfagundes
+ * @since 10/08/2015
+ */
+public class FotoPessoaWrapper {
+
+	private final Integer idFotoPessoa;
+
+	private final Integer idPessoa;
+
+	private final String foto;
+
+	public FotoPessoaWrapper(Integer idFotoPessoa, Integer idPessoa, String foto) {
+		super();
+		this.idFotoPessoa = idFotoPessoa;
+		this.idPessoa = idPessoa;
+		this.foto = foto;
+	}
+
+	public FotoPessoaWrapper(FotoPessoa fp) {
+		idFotoPessoa = fp.getIdFotoPessoa();
+		idPessoa = fp.getIdPessoa();
+		foto = fp.getFoto();
+	}
+
+	public Integer getIdFotoPessoa() {
+		return idFotoPessoa;
+	}
+
+	public Integer getIdPessoa() {
+		return idPessoa;
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+}
